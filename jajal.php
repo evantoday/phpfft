@@ -14,9 +14,9 @@ $loginResponse = $ig->login($username, $password);
 $userId = $ig->people->getUserIdForName('tahusunduk');
 $feed = $ig->timeline->getUserFeed($userId);
 $i=0;
-foreach ($feed->getItems() as $feeds){
-    $likbe = $ig->media->like($feeds->getId());
-    $bacot = $ig->media->comment($feeds->getId() , "sayang intannnnnnn");
+/*foreach ($feed->getItems() as $feeds){
+    //$likbe = $ig->media->like($feeds->getId());
+    //$bacot = $ig->media->comment($feeds->getId() , "sayang intannnnnnn");
     var_dump($feeds->getId());
     echo "\n";
     print($bacot->getStatus());
@@ -25,3 +25,11 @@ if($i == 3){
     break;
 }
 }
+*/
+$userId = $ig->people->getUserIdForName('tahusunduk');
+$userids = [];
+$userids[] = $userId;
+var_dump($userids);
+$text = "intaannn";
+
+$send = $ig->direct->sendText(["users"=>$userids], $text);
