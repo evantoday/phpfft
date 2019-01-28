@@ -3,8 +3,8 @@
 while(true){
 require __DIR__.'/vendor/autoload.php';
 /////// CONFIG ///////
-$username = 'evannurr';
-$password = 'sihdaunix123';
+$username = '';
+$password = '';
 $debug = true;
 $truncatedDebug = false;
 //////////////////////
