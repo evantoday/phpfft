@@ -6,8 +6,8 @@ require __DIR__ . '/vendor/autoload.php';
 
 // ///// CONFIG ///////
 
-$username = 'fchrbass';
-$password = 'fikri83900';
+$username = '';
+$password = '';
 $debug = false;
 $truncatedDebug = false;
 
